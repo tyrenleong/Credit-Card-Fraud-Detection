@@ -37,8 +37,8 @@ The evaluation metrics for both training and testing data are computed.
 
 |   Metrics  | Accuracy | Sensitivity | Specificity | F1 Score | Log Loss |
 | :--------- | :------: | :------: |:------: |:------: |:------: |
-| Training   |   0.950635   | 0.593926 | 0.984738  | 0.677395 | 0.303958   |
-| Test       |   0.95057    | 0.984842 | 0.984842  | 0.679338 | 0.303189   |
+| Training   |   0.95068   | 0.593299 | 0.9848  | 0.677088 | 0.303561   |
+| Test       |   0.949905    | 0.593009 | 0.984516  | 0.676692 | 0.307684   |
 
 
 ## Installation
