@@ -40,6 +40,8 @@ The evaluation metrics for both training and testing data are computed.
 | Training   |   0.95068   | 0.593299 | 0.9848  | 0.677088 | 0.303561   |
 | Test       |   0.949905    | 0.593009 | 0.984516  | 0.676692 | 0.307684   |
 
+![image](https://github.com/user-attachments/assets/879b1acb-49d4-48aa-b12c-4f9ece02fe41)
+
 
 ## Installation
 
@@ -47,6 +49,6 @@ Clone the Repository
 
 
 ```bash
-git clone https://github.com/tyrenleong/Stock-Portfolio-Optimization-and-Risk-Analysis.git
+git clone https://github.com/tyrenleong/Stock-Portfolio-Optimization-and-Risk-Analysis.git](https://github.com/tyrenleong/Credit-Card-Fraud-Detection.git
 cd 
 ```
