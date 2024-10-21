@@ -49,6 +49,6 @@ Clone the Repository
 
 
 ```bash
-git clone https://github.com/tyrenleong/Stock-Portfolio-Optimization-and-Risk-Analysis.git
+git clone https://github.com/tyrenleong/Stock-Portfolio-Optimization-and-Risk-Analysis.git](https://github.com/tyrenleong/Credit-Card-Fraud-Detection.git
 cd 
 ```
