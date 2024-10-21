@@ -1,9 +1,8 @@
 # Credit Card Fraud Detection
 
+## Tyren Leong and Adrian Damian 
 
 ## Description
-Tyren Leong and Adrian Damian
-CS 422
 
 This project uses a Naive Bayes Classifier to classify whether a credit card data instance is fraud or not.
 
@@ -35,6 +34,11 @@ The model is used to predict both training and testing data.
 The evaluation metrics for both training and testing data are computed.
 
 ## Results
+
+|   Metrics  | Accuracy | Sensitivity | Specificity | F1 Score | Log Loss |
+| :--------- | :------: | :------: |:------: |:------: |:------: |
+| Training   |   0.950635   | 0.593926 | 0.984738  | 0.677395 | 0.303958   |
+| Test       |   0.95057    | 0.984842 | 0.984842  | 0.679338 | 0.303189   |
 
 
 ## Installation
