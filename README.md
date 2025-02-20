@@ -80,11 +80,17 @@ Queried through SQL statements, around 8.7403% of the dataset are fraudulent cre
 |   Metrics  | Accuracy |
 | :--------- | :------: |
 | Test       |   0.917059   |
+
+
+
 ### Gaussian Naive Bayes (GNB) Classifier 
 |   Metrics  | Accuracy | 
 | :--------- | :------: | 
 | Training   |   0.920065   | 
 | Test       |   0.920601   |
+
+
+
 ### Logistic Regression Model (LOGREG)
 |   Metrics  | Accuracy | 
 | :--------- | :------: | 
@@ -120,11 +126,17 @@ Queried through SQL statements, around 8.7403% of the dataset are fraudulent cre
 | Training   |   0.994216   | 0.956842 | 0.997797  | 0.96659 | 0.019166   |
 | Test       |   0.99436    | 0.957882 | 0.997847  | 0.967361 | 0.018971   |
 
+
+
+
 ### Gaussian Naive Bayes (GNB) Classifier 
 |   Metrics  | Accuracy | Sensitivity | Specificity | F1 Score | Log Loss |
 | :--------- | :------: | :------: |:------: |:------: |:------: |
 | Training   |   0.95068   | 0.593299 | 0.9848  | 0.677088 | 0.303561   |
 | Test       |   0.949905    | 0.593009 | 0.984516  | 0.676692 | 0.307684   |
+
+
+
 
 
 ### Logistic Regression Model (LOGREG)
@@ -134,7 +146,7 @@ Queried through SQL statements, around 8.7403% of the dataset are fraudulent cre
 | Test       |   0.961695    | 0.720537 | 0.984827  | 0.767051 | 0.463332   |
 
 # Summary
-- Generally, Scikit-learn models **'trained much quicker and are more accurate'** than MLlib models. Although PySpark utilizes parallel processing, training time was still slower as it may be due to the relatively small dataset. This means we did not take full advantage of the benefits of PySpark.
+- Generally, Scikit-learn models **trained much quicker and are more accurate** than MLlib models. Although PySpark utilizes parallel processing, training time was still slower as it may be due to the relatively small dataset. This means we did not take full advantage of the benefits of PySpark.
 
 - In Scikit-learn, MLP is the most accurate when detecting credit card fraud, flagging less false positives and negatives while also having more confidence when classifying.
 
