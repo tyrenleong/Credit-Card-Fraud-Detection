@@ -4,7 +4,7 @@
 
 ## Description
 
-This project uses machine learning algorithms to detect fraudulent credit card transactions using Apache Spark MLlib through PySpark and SciPy Scikit-learn.
+This project uses machine learning algorithms to detect fraudulent credit card transactions using Apache Spark MLlib through PySpark and SciPy Scikit-learn. Some data analysis is performed through Spark SQL.
 
 Dataset source: https://www.kaggle.com/datasets/dhanushnarayananr/credit-card-fraud
 
@@ -29,9 +29,9 @@ Dataset source: https://www.kaggle.com/datasets/dhanushnarayananr/credit-card-fr
 
 ## Approach
 ### Three machine learning approaches were used:
-1. Multi-layer Perceptron (MLP) Classifier (Scikit-learn and MLlib)
-2. Naive Bayes Classifier (Scikit-learn and MLlib)
-3. Logistic Regression Model (MLlib)
+1. Multi-layer Perceptron (MLP) Classifier 
+2. Naive Bayes Classifier 
+3. Logistic Regression Model 
 
 ### PySpark MLlib Steps
 - The data set is processed by checking for missing values then split into 80% for training and 20% for testing.
@@ -46,6 +46,16 @@ Dataset source: https://www.kaggle.com/datasets/dhanushnarayananr/credit-card-fr
 - The machine learning models are trained on the training data.
 - The model is used to predict both training and testing data.
 - The evaluation metrics for both training and testing data are computed.
+
+# Brief Explanatory Data Analysis
+Number of rows with fraud 87403
+Fraud percentage: 8.7403%
+Number of rows without fraud: 912597
+Number of rows with fraud and is an online order: 82711
+Number of rows with fraud and chip is used: 22410
+Number of rows with fraud and is a repeated retailer: 76925
+
+Queried through SQL statements, around 8.7403% of the dataset are fraudulent credit card transactions. Most of the fraudulent cases are online orders and are at repeated retailer.
 
 # Results
 ## PySpark MLlib
@@ -105,9 +115,24 @@ Dataset source: https://www.kaggle.com/datasets/dhanushnarayananr/credit-card-fr
 | Test       |   0.99436    | 0.957882 | 0.997847  | 0.967361 | 0.018971   |
 
 ### Gaussian Naive Bayes (GNB) Classifier 
+|   Metrics  | Accuracy | Sensitivity | Specificity | F1 Score | Log Loss |
+| :--------- | :------: | :------: |:------: |:------: |:------: |
+| Training   |   0.95068   | 0.593299 | 0.9848  | 0.677088 | 0.303561   |
+| Test       |   0.949905    | 0.593009 | 0.984516  | 0.676692 | 0.307684   |
 
-## Comparison to NBC
-While the results varied greatly depending on the model parameters, all three versions of the model outperformed the Naive Bayes Classifier, with Model 2 outperforming slightly and Model 1 and 3 outperforming greatly. The models had higher Accuracy, Sensitivity, Specificity, and F1 scores, while also having smaller Log Loss values. This shows that the Multi-Layer Perceptron is much more accurate when detecting credit card fraud, flagging less false positives and negatives while also having more confidence when classifying.
+
+### Logistic Regression Model (LOGREG)
+|   Metrics  | Accuracy | Sensitivity | Specificity | F1 Score | Log Loss |
+| :--------- | :------: | :------: |:------: |:------: |:------: |
+| Training   |   0.960955   | 0.712381 | 0.984753  | 0.761236 | 0.478306   |
+| Test       |   0.961695    | 0.720537 | 0.984827  | 0.767051 | 0.463332   |
+
+# Summary
+- Generally, Scikit-learn models **'trained much quicker and are more accurate'** than MLlib models. Although PySpark utilizes parallel processing, training time was still slower as it may be due to the relatively small dataset. This means we did not take full advantage of the benefits of PySpark.
+
+- In Scikit-learn, MLP is the most accurate when detecting credit card fraud, flagging less false positives and negatives while also having more confidence when classifying.
+
+- In MLlib, logistic regression had the highest accuracy, beating out the neural network model
 
 
 ## Installation
