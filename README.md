@@ -33,14 +33,14 @@ Three machine learning approaches were used:
 2. Naive Bayes Classifier (Scikit-learn and MLlib)
 3. Logistic Regression Model (MLlib)
 
-PySpark MLlib Steps
+### PySpark MLlib Steps
 - The data set is processed by checking for missing values then split into 80% for training and 20% for testing.
 - Features are vectorized using PySpark's VectorAssembler.
 - The machine learning algorithms from pyspark.ml.classification are trained on the training data.
 - The model is used to predict both training and testing data. (MLP model only predicted testing data)
 - The evaluation metrics for both training and testing data are computed.
 
-SciPy Scikit-learn Steps
+### SciPy Scikit-learn Steps
 - The data set is processed by checking for missing values then split into 80% for training and 20% for testing.
 - A Standard Scaler is used to Standardize the features of the training and test data.
 - The machine learning models are trained on the training data.
