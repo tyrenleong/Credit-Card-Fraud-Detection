@@ -28,7 +28,7 @@ Dataset source: https://www.kaggle.com/datasets/dhanushnarayananr/credit-card-fr
 
 
 ## Approach
-Three machine learning approaches were used:
+### Three machine learning approaches were used:
 1. Multi-layer Perceptron (MLP) Classifier (Scikit-learn and MLlib)
 2. Naive Bayes Classifier (Scikit-learn and MLlib)
 3. Logistic Regression Model (MLlib)
