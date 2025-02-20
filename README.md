@@ -51,9 +51,27 @@ Dataset source: https://www.kaggle.com/datasets/dhanushnarayananr/credit-card-fr
 ## PySpark MLlib
 
 ### Multi-layer Perceptron (MLP) Classifier
-### Gaussian Naive Bayes (GNB) Classifier 
-### Logistic Regression Model (LOGREG)
+#### Model 1
+This model uses 2 hidden layers with 32 and 16 neurons respectively. It uses the Sigmoid function as its activation function and Gradient Descent as the solver.
+|   Metrics  | Accuracy |
+| :--------- | :------: |
+| Test       |   0.912364   |
 
+#### Model 2
+This model uses 1 hidden layer with 32 neurons. It uses the Sigmoid function as its activation function and the identity function as the solver.
+|   Metrics  | Accuracy |
+| :--------- | :------: |
+| Test       |   0.917059   |
+### Gaussian Naive Bayes (GNB) Classifier 
+|   Metrics  | Accuracy | 
+| :--------- | :------: | 
+| Training   |   0.920065   | 
+| Test       |   0.920601   |
+### Logistic Regression Model (LOGREG)
+|   Metrics  | Accuracy | 
+| :--------- | :------: | 
+| Training   |   0.920065   | 
+| Test       |   0.920601   |
 
 
 
