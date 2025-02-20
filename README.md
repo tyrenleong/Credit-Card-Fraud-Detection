@@ -49,11 +49,17 @@ Dataset source: https://www.kaggle.com/datasets/dhanushnarayananr/credit-card-fr
 
 # Brief Explanatory Data Analysis
 Number of rows with fraud 87403
+
 Fraud percentage: 8.7403%
+
 Number of rows without fraud: 912597
+
 Number of rows with fraud and is an online order: 82711
+
 Number of rows with fraud and chip is used: 22410
+
 Number of rows with fraud and is a repeated retailer: 76925
+
 
 Queried through SQL statements, around 8.7403% of the dataset are fraudulent credit card transactions. Most of the fraudulent cases are online orders and are at repeated retailer.
 
