@@ -48,7 +48,7 @@ Dataset source: https://www.kaggle.com/datasets/dhanushnarayananr/credit-card-fr
 - The evaluation metrics for both training and testing data are computed.
 
 # Brief Explanatory Data Analysis
-Number of rows with fraud 87403
+- Number of rows with fraud 87403
 
 - Fraud percentage: 8.7403%
 
