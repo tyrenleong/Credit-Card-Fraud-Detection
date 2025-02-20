@@ -150,7 +150,7 @@ Queried through SQL statements, around 8.7403% of the dataset are fraudulent cre
 
 - In Scikit-learn, MLP is the most accurate when detecting credit card fraud, flagging less false positives and negatives while also having more confidence when classifying.
 
-- In MLlib, logistic regression had the highest accuracy, beating out the neural network model
+- In MLlib, logistic regression had the highest accuracy, beating out the neural network model.
 
 
 ## Installation
